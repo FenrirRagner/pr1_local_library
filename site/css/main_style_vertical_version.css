@@ -132,13 +132,13 @@ body{
 
 /*style for mark elements*/
 h1{
-	font-size: 0.9em;
+	font-size: 0.75em;
 	text-decoration: underline;
 	text-align: center;
 	font-weight: bold;
-	padding-top: 0.1%;
-  width: 26vw;
-  margin-left: 3vw;
+	margin-left: 6vw;
+	width: 20vw;
+	margin-top: 1.1225vh;
 }
 
 li{
@@ -158,22 +158,24 @@ a:hover{
 }
 
 /*style for main elements*/
+header{
+	width: 100vw;
+	height: 4.5vh;
+	background-color: white;
+	float: left;
+}
+
 main{
 	-webkit-column-count: 1;
 	width: 94vw;
-}
-header{
-	width: 100vw;
-	height: 3vh;
-	background-color: white;
-  float: left;
 }
 /* navigations*/
 nav{
 	background-color: Snow;
 	width: 6vw;
-	height: 91vh;
+	height: 91.5vh;
 	float: left;
+	padding-bottom: 0.4px;
 }
 
 nav ul{
@@ -198,12 +200,14 @@ nav a{
 	height: 100%;
 	width: 100%;
 }
+
 /* aside and child */
 aside{
 	width: 20vw;
-	height: 91vh;
+	height: 91.5vh;
 	background-color: Whitesmoke;
 	float: left;
+	padding-bottom: 0.4px;
 }
 aside li{
 	padding: 5px;
@@ -213,19 +217,38 @@ aside ul:first-child{
 	margin-top: 10px;
 }
 
+aside  li > a{
+	display: inline-block;
+	min-width: 100%;
+}
+
 /*main info section and child*/
 section{
 	width: 74vw;
-	height: 91vh;
+	height: 91.5vh;
 	background-color: Ghostwhite;
 	float: left;
+	padding-bottom: 0.4px;
 }
 
+section p{
+	margin: 2% auto auto 2%;
+	font-size: 0.6em;
+}
 
 
 /*footer*/
 footer{
 	width: 100vw;
-	height: 6vh;
+	min-height: 4vh;
 	background-color: white;
+	clear: both;
+	-webkit-column-count: 1;
+}
+
+footer p{
+	width: 6vw;
+	text-align: center;
+	font-size: 0.4em;
+	margin-top: 1%;
 }
