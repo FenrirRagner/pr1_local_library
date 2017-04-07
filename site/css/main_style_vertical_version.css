@@ -190,8 +190,8 @@ nav li{
 	border: 1px solid #000;
 	float: left;
 	margin: 2% 1% 0 1%;
-	width: 2.5vw;
-	height: 4vh;
+	width: 90%;
+	min-height: 4vh;
   margin-top: 15%
 }
 
@@ -201,6 +201,9 @@ nav a{
 	width: 100%;
   font-size: .8em;
 }
+
+/*test element*/
+
 
 /* aside and child */
 aside{
@@ -232,11 +235,28 @@ section{
 	padding-bottom: 0.4px;
 }
 
-section p{
-	margin: 2% auto auto 2%;
-	font-size: 0.7em;
+section header{
+  height: 6vh;
+  background-color: lightgray;
 }
 
+section h2{
+	font-size: 1em;
+  text-align: left;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  max-height: 6vh;
+}
+
+section article{
+  width: inherit;
+  height: inherit;
+}
+
+section article p{
+  font-size: 0.8em;
+  text-align: justify;
+}
 
 /*footer and child*/
 footer{
@@ -248,7 +268,7 @@ footer{
 }
 
 footer p{
-	width: 16vw;
+	width: 100vw;
 	text-align: left;
 	font-size: 0.62em;
 	margin-top: 0.5%;
