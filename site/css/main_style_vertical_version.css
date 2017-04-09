@@ -123,7 +123,8 @@ table {
 
 /*main style for page*/
 body{
-	background-color: red;
+	background-color: #009999;
+  color: white;
 	background-size: cover;
 	background-attachment: fixed;
 	font-size: 24px;
@@ -132,13 +133,16 @@ body{
 
 /*style for mark elements*/
 h1{
-	font-size: 0.75em;
+	font-size: 1.6em;
 	text-decoration: underline;
 	text-align: center;
 	font-weight: bold;
 	margin-left: 3vw;
 	width: 20vw;
-	margin-top: 1.1225vh;
+}
+
+h1 a{
+  color: #eee;
 }
 
 li{
@@ -148,21 +152,20 @@ li{
 
 a{
 	text-decoration: none;
-	color:black;
+	color: #33cccc;
 	width: 100%;
 }
 
 a:hover{
 	text-decoration:underline;
-	color:#ffffff;
+	color: white;
 }
 
 /*style for main elements*/
-header{
+body > header{
 	width: 100vw;
 	padding-bottom: 0.45em;
-	background-color: white;
-	float: left;
+	background-color: #009999;
 }
 
 main{
@@ -171,8 +174,9 @@ main{
 }
 /* navigations*/
 nav{
-	background-color: Snow;
-	width: 3vw;
+	background-color: #009999;
+  border-right: 0.15vw solid #33cccc;
+	width: 2.85vw;
 	min-height: 91.5vh;
 	float: left;
 	padding-bottom: 0.4px;
@@ -206,11 +210,12 @@ nav a{
 
 /* aside and child */
 aside{
-	width: 20vw;
+	width: 19.85vw;
 	min-height: 91.5vh;
-	background-color: Whitesmoke;
+	background-color: #006666;
 	float: left;
 	padding-bottom: 0.4px;
+  border-right: 0.15vw solid #33cccc;
 }
 aside li{
 	padding: 5px;
@@ -229,26 +234,29 @@ aside  li > a{
 section{
 	width: 77vw;
 	height: 91.5vh;
-	background-color: Ghostwhite;
+	background-color: ;
 	float: left;
-	padding-bottom: 0.4px;
 }
 
 section header{
-  min-height: 6vh;
-  background-color: lightgray;
-  float: left;
+  min-width: 100vh;
+  min-height: 5.85vh;
+  background-color: #006666;
+  border-bottom: 0.15vw solid #33cccc;
 }
 
 section h2{
-	font-size: 1em;
+	font-size: 1.5em;
   text-align: left;
   padding-left: 1em;
-  padding-top: 0.8em;
+  padding-top: 0.2em;
+  color: #33cccc;
 }
 
 section article{
-  float: left;
+  background-color: #006666;
+  min-height: 85.5vh;
+  padding-bottom: 0.4px;
 }
 
 section article p{
@@ -259,15 +267,19 @@ section article p{
 
 /*footer and child*/
 footer{
-  padding-top: 0.2em; 
 	width: 100vw;
 	min-height: 10vh;
-	background-color: white;
+	background-color: #006666;
+  border-top: 0.15vw solid #33cccc;
 }
 
 footer p{
 	text-align: left;
 	font-size: 0.62em;
-	margin-top: 0.5%;
+	margin-top: 0.3%;
   margin-left: 0.5%;
+}
+
+p{
+  color: #33cccc;
 }
