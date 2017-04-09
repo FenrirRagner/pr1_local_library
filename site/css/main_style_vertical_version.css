@@ -160,7 +160,7 @@ a:hover{
 /*style for main elements*/
 header{
 	width: 100vw;
-	height: 4.5vh;
+	padding-bottom: 0.45em;
 	background-color: white;
 	float: left;
 }
@@ -173,7 +173,7 @@ main{
 nav{
 	background-color: Snow;
 	width: 3vw;
-	height: 91.5vh;
+	min-height: 91.5vh;
 	float: left;
 	padding-bottom: 0.4px;
 }
@@ -197,7 +197,6 @@ nav li{
 
 nav a{
 	display: inline-block;
-	height: 100%;
 	width: 100%;
   font-size: .8em;
 }
@@ -208,7 +207,7 @@ nav a{
 /* aside and child */
 aside{
 	width: 20vw;
-	height: 91.5vh;
+	min-height: 91.5vh;
 	background-color: Whitesmoke;
 	float: left;
 	padding-bottom: 0.4px;
@@ -236,39 +235,37 @@ section{
 }
 
 section header{
-  height: 6vh;
+  min-height: 6vh;
   background-color: lightgray;
+  float: left;
 }
 
 section h2{
 	font-size: 1em;
   text-align: left;
   padding-left: 1em;
-  padding-top: 0.5em;
-  max-height: 6vh;
+  padding-top: 0.8em;
 }
 
 section article{
-  width: inherit;
-  height: inherit;
+  float: left;
 }
 
 section article p{
   font-size: 0.8em;
-  text-align: justify;
+  padding-left: 1em;
+  padding-top: 1em;
 }
 
 /*footer and child*/
 footer{
+  padding-top: 0.2em; 
 	width: 100vw;
-	min-height: 4vh;
+	min-height: 10vh;
 	background-color: white;
-	clear: both;
-	-webkit-column-count: 1;
 }
 
 footer p{
-	width: 100vw;
 	text-align: left;
 	font-size: 0.62em;
 	margin-top: 0.5%;
