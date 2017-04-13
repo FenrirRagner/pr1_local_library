@@ -79,7 +79,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video ,
+main{
   margin: 0;
   padding: 0;
   border: 0;
@@ -98,7 +99,8 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section,
+main {
   display: block;
 }
 ol,
@@ -123,26 +125,53 @@ table {
 
 /*main style for page*/
 body{
-	background-color: #009999;
-  color: white;
+	background-color: #FDFDFD;
 	background-size: cover;
 	background-attachment: fixed;
+	font-family: book anticua;
 	font-size: 24px;
 	overflow: hidden;
+}
+
+/* colors */
+h1, footer{
+	background-color: #FAFAFA;
+}
+
+nav{
+	background-color: #BBBBBB;
+}
+
+h2{
+	background-color: #9F5050;
+}
+
+aside, section{
+	background-color:  #FDFDFD;
+}
+
+h1 a{
+	color: #9F5050;
+}
+
+h2{
+	color: #fdfdfd;
+}
+
+a, p{
+	color: #555;
 }
 
 /*style for mark elements*/
 h1{
 	font-size: 1.6em;
 	text-decoration: underline;
-	text-align: center;
+	text-align: left;
+	padding-left: 7.5vw;
+	padding-bottom: 0.2em;
 	font-weight: bold;
-	margin-left: 3vw;
-	width: 20vw;
-}
-
-h1 a{
-  color: #eee;
+	width: 100vw;
+	border-bottom: 1px solid #aaa;
 }
 
 li{
@@ -152,34 +181,25 @@ li{
 
 a{
 	text-decoration: none;
-	color: #33cccc;
 	width: 100%;
 }
 
 a:hover{
 	text-decoration:underline;
-	color: white;
+	color: #000;
 }
 
 /*style for main elements*/
-body > header{
-	width: 100vw;
-	padding-bottom: 0.45em;
-	background-color: #009999;
-}
-
 main{
 	-webkit-column-count: 1;
-	width: 97vw;
+	min-width: 94.85vw;
 }
 /* navigations*/
 nav{
-	background-color: #009999;
-  border-right: 0.15vw solid #33cccc;
-	width: 2.85vw;
+	border-right: 0.15vw solid #aaa;
+	width: 5vw;
 	min-height: 91.5vh;
 	float: left;
-	padding-bottom: 0.4px;
 }
 
 nav ul{
@@ -196,7 +216,7 @@ nav li{
 	margin: 2% 1% 0 1%;
 	width: 90%;
 	min-height: 4vh;
-  margin-top: 15%
+	margin-top: 15%
 }
 
 nav a{
@@ -210,12 +230,10 @@ nav a{
 
 /* aside and child */
 aside{
-	width: 19.85vw;
+	width: 20vw;
 	min-height: 91.5vh;
-	background-color: #006666;
 	float: left;
-	padding-bottom: 0.4px;
-  border-right: 0.15vw solid #33cccc;
+	border-right: 0.15vw solid #aaa;
 }
 aside li{
 	padding: 5px;
@@ -230,56 +248,44 @@ aside  li > a{
 	min-width: 100%;
 }
 
-/*main info section and child*/
-section{
-	width: 77vw;
-	height: 91.5vh;
-	background-color: ;
-	float: left;
+aside h2{
+	border-bottom: 1px solid #aaa;
+	text-align: center;
 }
 
-section header{
-  min-width: 100vh;
-  min-height: 5.85vh;
-  background-color: #006666;
-  border-bottom: 0.15vw solid #33cccc;
+/*main info section and child*/
+section{
+	width: 74.7vw;
+	/* min-height: 91.5vh; */
+	float: left;
+	padding-right: 0.01vw;
 }
 
 section h2{
 	font-size: 1.5em;
-  text-align: left;
-  padding-left: 1em;
-  padding-top: 0.2em;
-  color: #33cccc;
-}
-
-section article{
-  background-color: #006666;
-  min-height: 85.5vh;
-  padding-bottom: 0.4px;
+	text-align: left;
+	padding-left: 1vw;
+	padding-top: 0.2vw;
+	padding-bottom: 0.3vw;
+	width: 74.7vw;
+	border-bottom: 0.15vw solid #aaa;
 }
 
 section article p{
   font-size: 0.8em;
-  padding-left: 1em;
-  padding-top: 1em;
+  padding-left: 1vw;
+  padding-top: 1vw;
 }
 
 /*footer and child*/
 footer{
 	width: 100vw;
-	min-height: 10vh;
-	background-color: #006666;
-  border-top: 0.15vw solid #33cccc;
+	border-top: 0.15vw solid #aaa;
 }
 
 footer p{
 	text-align: left;
 	font-size: 0.62em;
 	margin-top: 0.3%;
-  margin-left: 0.5%;
-}
-
-p{
-  color: #33cccc;
+	margin-left: 6vw;
 }
