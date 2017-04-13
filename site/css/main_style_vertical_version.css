@@ -162,16 +162,20 @@ a, p{
 	color: #555;
 }
 
+h1, nav, aside, aside h2, section h2, footer{
+  border-color: #9F5050 !important;
+}
+
 /*style for mark elements*/
 h1{
-	font-size: 1.6em;
+	font-size: 1.7em;
 	text-decoration: underline;
 	text-align: left;
-	padding-left: 7.5vw;
+	padding-left: 9.5vw;
 	padding-bottom: 0.2em;
 	font-weight: bold;
 	width: 100vw;
-	border-bottom: 1px solid #aaa;
+	border-bottom: 1px solid;
 }
 
 li{
@@ -184,9 +188,9 @@ a{
 	width: 100%;
 }
 
-a:hover{
-	text-decoration:underline;
-	color: #000;
+h1 a:hover, aside a:hover{
+	background-color: #9F5050;
+	color: #fdfdfd;
 }
 
 /*style for main elements*/
@@ -196,7 +200,7 @@ main{
 }
 /* navigations*/
 nav{
-	border-right: 0.15vw solid #aaa;
+	border-right: 0.15vw solid;
 	width: 5vw;
 	min-height: 91.5vh;
 	float: left;
@@ -211,18 +215,18 @@ nav ul:first-child{
 }
 
 nav li{
-	border: 1px solid #000;
 	float: left;
-	margin: 2% 1% 0 1%;
-	width: 90%;
-	min-height: 4vh;
-	margin-top: 15%
+	margin-top: 15%;
+  margin-right: 5%;
 }
 
-nav a{
-	display: inline-block;
-	width: 100%;
-  font-size: .8em;
+nav img, nav a{
+  width: 100%;
+}
+
+nav img:hover{
+  background-color: #9F5050;
+  border-radius: 50%;
 }
 
 /*test element*/
@@ -233,7 +237,7 @@ aside{
 	width: 20vw;
 	min-height: 91.5vh;
 	float: left;
-	border-right: 0.15vw solid #aaa;
+	border-right: 0.15vw solid;
 }
 aside li{
 	padding: 5px;
@@ -249,7 +253,7 @@ aside  li > a{
 }
 
 aside h2{
-	border-bottom: 1px solid #aaa;
+	border-bottom: 1px solid;
 	text-align: center;
 }
 
@@ -268,7 +272,7 @@ section h2{
 	padding-top: 0.2vw;
 	padding-bottom: 0.3vw;
 	width: 74.7vw;
-	border-bottom: 0.15vw solid #aaa;
+	border-bottom: 0.15vw solid;
 }
 
 section article p{
@@ -280,7 +284,7 @@ section article p{
 /*footer and child*/
 footer{
 	width: 100vw;
-	border-top: 0.15vw solid #aaa;
+	border-top: 0.15vw solid;
 }
 
 footer p{
