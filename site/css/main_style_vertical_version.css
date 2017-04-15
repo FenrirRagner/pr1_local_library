@@ -175,6 +175,10 @@ h1, nav, aside, aside h2, section h2, footer{
   border-color: #9F5050 !important;
 }
 
+h1{
+  color: #BBBBBB;
+}
+
 /*style for mark elements*/
 h1{
 	font-size: 1.7em;
