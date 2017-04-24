@@ -1,49 +1,33 @@
-
 /*main style for page*/
 body{
 	background-color: #FDFDFD;
-	background-size: cover;
-	background-attachment: fixed;
 	font-size: 24px;
 	overflow: hidden;
 }
 
 /* colors */
-h1, footer{
-	background-color: #FAFAFA;
-}
-
 nav, aside li:nth-child(2n){
-	background-color: #BBBBBB;
+	background-color: rgba(187,187,187,0.3);
 }
 
-h2{
-	background-color: #9F5050;
-}
-
-aside, section{
-	background-color:  #FDFDFD;
+h1{
+  color: #BBBBBB;
 }
 
 h1 a{
 	color: #9F5050;
 }
 
-h2{
-	color: #fdfdfd;
-}
-
 a, p{
 	color: #555;
 }
 
-h1 a:hover, aside a:hover{
+h1 a:hover, h2, aside a:hover, nav img:hover{
 	background-color: #9F5050;
 	color: #fdfdfd;
 }
 
 nav img:hover{
-  background-color: #9F5050;
   border-radius: 50%;
 }
 
@@ -51,25 +35,36 @@ h1, nav, aside, aside h2, section h2, footer{
   border-color: #9F5050 !important;
 }
 
+/* sizes font */
 h1{
-  color: #BBBBBB;
+	font-size: 40px;
+}
+
+li, aside li, section article p{
+	font-size: 20px;
+}
+
+section h2{
+	font-size: 35px;
+}
+
+footer p{
+	font-size: 12px;
 }
 
 /*style for mark elements*/
 h1{
-	font-size: 1.7em;
 	text-decoration: underline;
 	text-align: left;
-	padding-left: 5vw;
+	padding-left: 3.5vw;
 	padding-bottom: 0.5vw;
 	font-weight: bold;
 	width: 100vw;
-	border-bottom: 1px solid;
+	border-bottom: 0.15vw solid;
 }
 
 li{
 	text-align: center;
-	font-size: 0.7em;
 }
 
 a{
@@ -85,8 +80,8 @@ main{
 /* navigations*/
 nav{
 	border-right: 0.15vw solid;
-	width: 5vw;
-	min-height: 91.5vh;
+	width: 3.5vw;
+	min-height: 100vh;
 	float: left;
 }
 
@@ -113,59 +108,57 @@ nav img, nav a{
 
 /* aside and child */
 aside h2{
-	border-bottom: 1px solid;
 	text-align: center;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
 }
 
 aside{
 	width: 20vw;
-	min-height: 91.5vh;
+	min-height: 100vh;
 	float: left;
 	border-right: 0.15vw solid;
 }
 
-aside li{
-	padding: 1%;
+aside li:first-child{
+	margin-top: 0;
 }
 
 aside  li > a{
-	display: block;
+	display: inline-block;
 	min-width: 100%;
+	vertical-align: middle;
+	padding-top: 1%;
 }
 
 /*main info section and child*/
 section{
 	width: 74.7vw;
 	float: left;
-	padding-right: 0.01vw;
 }
 
 section h2{
-	font-size: 1.5em;
 	text-align: left;
 	padding-left: 1vw;
 	padding-top: 0.2vw;
 	padding-bottom: 0.3vw;
-	width: 74.7vw;
-	border-bottom: 0.15vw solid;
+	min-width: 100vw;
 }
 
 section article p{
-  font-size: 0.8em;
   padding-left: 1vw;
   padding-top: 1vw;
 }
 
 /*footer and child*/
 footer{
+	position: fixed;
+	bottom: 0;
 	width: 100vw;
 	border-top: 0.15vw solid;
 }
 
 footer p{
 	text-align: left;
-	font-size: 0.62em;
 	margin-top: 0.2em;
 	margin-left: 5vw;
 }
